@@ -5,7 +5,6 @@
 <title>Untitled Document</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="style.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 
@@ -16,66 +15,20 @@
     <h1>Overskrift</h1>
 </header>
     
-<nav>
-    <ul>
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-        <li><a href="#">Item 4</a></li>
-        <li><a href="#">Item 5</a></li>
-    </ul>
-</nav>
-    
 <main>
-    <h2>Denne template skal selvfølgelig justeres efter behov...</h2>
-     <p>...men mange af de grundlæggende ting anbefaler vi at man stort set altid bruger:</p>
-    <section>
-        <div>
-           
-            
-            <ul>
-                <li>HTML:</li>
-                <li>viewport tag i &lt;head&gt;</li>
-                <li>"wrapper" div</li>
-                <li>comments hvor relevant (fx 'end wrapper')</li>
-                <li>opdeling i header/nav/main/footer</li>
-                <li>andre semantiske elementer hvor relevant (section, article, aside osv.)</li>
-                <li>struktur som muliggør layout med Flexbox (og senere Grids)</li>
-            </ul>
-            
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
+    <section class="pokeList">
         
-        <div>
-            <ul>
-                <li>CSS:</li>
-                <li>stjerne-reset for margin, padding og box-sizing:border-box;</li>
-                <li>genindsæt 1em padding under p-tags</li>
-                <li><span>img{<br> &nbsp; width:100%; <br> &nbsp; height:auto;<br>}</span></li>
-                <li>"wrapper" div: max-width &amp; centrering med margin</li>
-                <li>comments hvor relevant</li>
-                <li><span>nav ul{<br> &nbsp; list-style-type:none;<br> &nbsp; ...<br>}</span></li>
-                <li><span>nav a{<br> &nbsp; text-decoration:none;<br> &nbsp; 
-    color:#???;<br>}</span></li>
-                <li>Layout med Flexbox (og senere Grids)</li>
-            </ul>
-
-            
-        </div>
-    </section>
-    
-    <section>
-        <img src="images/waves_960.jpg" alt="waves">
     </section>
 </main>
-    
-<footer>
-    Footer
-</footer>
-    
+
+<tempalte id="themplate">
+    <article class="templateCard">
+        <p class="pokeName"></p>
+    </article>
+</tempalte>
+
 </div> <!-- end wrapper -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="java.js"></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
