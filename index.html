@@ -12,10 +12,11 @@
 <div id="wrapper">
 
 <header>
-    <h1>Overskrift</h1>
+    
 </header>
     
-<main>
+<main class="indexMain">
+    <img class="pokedex" src="/images/Pokédex_logo.png" alt="pokedex logo">
     <ul class="pokeList">
         
     </ul>
@@ -25,12 +26,15 @@
 
 <template id="template">
     <li class="templateCard">
-        <a href="" class="pokeName"></a>
+        <div class="pokeFlex">
+            <img class="pokeListImage" src="" alt="">
+            <a href="" class="pokeName"></a>
+        </div>
     </li>
 </template>
 
 </div> <!-- end wrapper -->
-    <script src="/whatever.js"></script>
+    <script src="whatever.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

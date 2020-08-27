@@ -40,8 +40,10 @@ nav a{
     text-decoration:none;
     color:#000;
 }
-main{
+.indexMain{
     margin:2em 0; 
+    display: grid;
+    place-items: center;
 }
 footer{
     text-align: center;
@@ -85,5 +87,28 @@ button:active{
         #000000 43%,
         #000000 52%,
         #dddddd 52%); 
+}
+.pokeList{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.pokeImage{
+    width: 100px;
+}
+.home{
+    text-decoration: none;
+    color: red;
+    text-transform: capitalize;
+}
+.pokedex{
+    width: 300px;
+}
+.pokeFlex{
+    display: flex;
+}
+.pokeListImage{
+    width: 100px;
 }
 

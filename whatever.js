@@ -4,9 +4,20 @@ if (url.has("id")) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${url.get("id")}`)
     .then(res => res.json())
     .then(function(data) {
+        let pokemonName = document.querySelector(".pokemonName");
+        let pokeImage = document.querySelector(".pokeImage")
+        pokeImage.setAttribute("src", data.sprites.front_default)
+        pokemonName.innerText = data.name;
         console.log(data)
         let Abilities = document.querySelector(".abilities");
-        Abilities.innerText = data.abilities[0].ability.name;
+        let pokeTypes = document.querySelector(".pokeTypes");
+        data.types.forEach(function(type){
+            pokeTypes.innerHTML+=type.type.name +"&nbsp;";
+        })
+
+        data.abilities.forEach(function(ability){
+            Abilities.innerHTML+=ability.ability.name +"&nbsp;";
+        })
     });
 }
 
