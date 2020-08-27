@@ -16,9 +16,8 @@ img{
 	height:auto;	
 }
 #wrapper{
-    max-width:1280px;
+    max-width:970px;
     margin:0 auto;
-    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
 h1{
     text-align:center;
@@ -49,5 +48,42 @@ footer{
     background-color: #001020;
     color:#FFF;
     padding:2em 0;
+}
+ul li a{
+    text-transform: capitalize;
+    
+}
+
+.pokeBallMid{
+    width: 15px;
+    height: 15px;
+    background-color: #FFF;
+    border: #000000 2px solid;
+    border-radius: 50px;
+}
+
+button{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: #000 2px solid;
+    background-image: linear-gradient(180deg,
+        #ef4138 43%,
+        #000000 43%,
+        #000000 52%,
+        #ffffff 52%);
+        display: grid;
+        place-items: center;
+        outline: none;
+}
+button:active .pokeBallMid{
+    background: radial-gradient(circle, rgba(148,187,233,1) 49%, rgba(255,255,255,1) 50%);
+}
+button:active{
+    background-image: linear-gradient(180deg,
+        #b43730 43%,
+        #000000 43%,
+        #000000 52%,
+        #dddddd 52%); 
 }
 
