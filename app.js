@@ -1,4 +1,6 @@
-fetch("https://pokeapi.co/api/v2/pokemon")
+let offset = 0;
+
+fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}`)
     .then(res => res.json())
     .then(function(data){
         let templateCard = document.querySelector("#template");
@@ -7,6 +9,7 @@ fetch("https://pokeapi.co/api/v2/pokemon")
             let array = result.url.split("/");
             //console.log(array);
             let id = array[array.length - 2];
+
             let clone = templateCard.content.cloneNode(true);
             let pokeName = clone.querySelector(".pokeName");
 
@@ -15,6 +18,5 @@ fetch("https://pokeapi.co/api/v2/pokemon")
             document.querySelector(".pokeList").appendChild(clone);
         });
     });
-fe
 
 

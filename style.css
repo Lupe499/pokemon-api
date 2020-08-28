@@ -94,13 +94,18 @@ button:active{
 a{
     text-decoration: none;
 }
-.pokeImage{
-    width: 100px;
-}
 .home{
     text-decoration: none;
-    color: red;
+    color: black;
     text-transform: capitalize;
+    grid-area: 1/1/2/2;
+    justify-self: flex-start;
+    padding-left: 10%;
+    padding-top: 2.5em;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    
+
 }
 .pokedex{
     width: 300px;
@@ -108,7 +113,20 @@ a{
 .pokeFlex{
     display: flex;
 }
-.pokeListImage{
+.pokeImage{
     width: 100px;
+    grid-area: 2/1/4/2;
+    padding-top: 4em;
+    
+    justify-self: flex-start;
+}
+.pokeInfo{
+    width: 500px;
+    grid-area: 1/1/6/3;
+}
+.characterMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
