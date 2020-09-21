@@ -11,16 +11,17 @@
 
 <body>
 <div id="wrapper">
-    <div class="phone">
-    <header>
-        <a class="pokedexLink" href="index.html">
-            <img class="pokedex" src="/images/Pokédex_logo.png">
-            </img>
-        </a>
-    </header>
-        
+
+<header>
+    <a href="index.html">
+        <h1>
+            Pokedex
+        </h1>
+    </a>
+</header>
+    
 <main class="indexMain">
-    <form action="search.html">
+    <form action="">
         <input type="search" name="keyword"/>
         <button type="submit">Search</button>
     </form>
@@ -28,10 +29,8 @@
     <ul class="pokeList">
         
     </ul>
-    <div class="navLinks">
-        <a class="prevLink" href="">Previous</a> | <a class="nextLink" href="">Next</a>
-    </div>
     
+    <a class="prevLink" href="">Previous</a> | <a class="nextLink" href="">Next</a>
     <button class="spinner"><!-- <div class="pokeBallMid"></div> --></button>
 </main>
 
@@ -40,9 +39,9 @@
             <a href="" class="pokeName"></a>
     </li>
 </template>
-    </div>
+
 </div> <!-- end wrapper -->
     
-    <script src="app.js"></script>
+    <script src="/search.js"></script>
 </body>
 </html>
